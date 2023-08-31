@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Devs</title>
+
+    <!--Links-->
+    <link rel="stylesheet" href="/CSS/style.css" media="">
 </head>
 <body>
     <header>
-        <h1>Cadastro de Devs</h1>
-        <p>Complete suas informações</p>
+        <h1 id="titulo">Cadastro de Devs</h1>
+        <p id="subtitulo">Complete suas informações</p>
     </header>
 
     <main>
         <form action="#">
-            <fieldset>
+            <fieldset class="grupo">
                 <legend>Informações Pessoais</legend>
-                <div>
+                <div class="campo">
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="sobrenome">Sobrenome:</label>
                     <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
             </fieldset>
 
-            <div>
+            <div class="campo">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
             </div>
 
-            <div>
+            <div class="campo">
                 <label>Qual sua área de atuação?</label>
                 <label>
                     <input type="radio" name="devweb" value="frontend" checked>Front-End
@@ -47,7 +50,7 @@
                 </label>
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="senioridade">Senioridade:</label>
                 <select id="senioridade" required>
                     <option value="" selected disabled>Selecione</option>
@@ -57,9 +60,9 @@
                 </select>
             </div>
 
-            <fieldset>
+            <fieldset class="grupo">
                 <legend>Tecnologias Conhecidas</legend>
-                <div>
+                <div id="check">
                     <input type="checkbox" name="html" id="tecnologia1">
                     <label for="tecnologia1">HTML</label>
                     <input type="checkbox" name="css" id="tecnologia2">
@@ -75,12 +78,12 @@
                 </div>
             </fieldset>
 
-            <div>
+            <div class="campo">
                 <label for="sobrevoce">Conte-nos um pouco sobre você:</label>
-                <textarea name="sobrevoce" id="sobrevoce" rows="6" style="width: 100%;" required></textarea>
+                <textarea name="sobrevoce" id="sobrevoce" rows="6" style="width: 26em;" required></textarea>
             </div>
 
-            <button type="submit">Concluído</button>
+            <button type="submit" id="btn">Concluído</button>
         </form>
     </main>
 
