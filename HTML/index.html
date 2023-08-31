@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Devs</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Devs</h1>
+        <p>Complete suas informações</p>
+    </header>
+
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label>Qual sua área de atuação?</label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-End
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-End
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Full-Stack
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="mobile">Mobile
+                </label>
+            </div>
+
+            <div>
+                <label for="senioridade">Senioridade:</label>
+                <select id="senioridade" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="junior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Tecnologias Conhecidas</legend>
+                <div>
+                    <input type="checkbox" name="html" id="tecnologia1">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" name="css" id="tecnologia2">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" name="js" id="tecnologia3">
+                    <label for="tecnologia3">JavaScript</label>
+                    <input type="checkbox" name="react" id="tecnologia4">
+                    <label for="tecnologia4">React</label>
+                    <input type="checkbox" name="angular" id="tecnologia5">
+                    <label for="tecnologia5">Angular</label>
+                    <input type="checkbox" name="vue" id="tecnologia6">
+                    <label for="tecnologia6">Vue.js</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="sobrevoce">Conte-nos um pouco sobre você:</label>
+                <textarea name="sobrevoce" id="sobrevoce" rows="6" style="width: 100%;" required></textarea>
+            </div>
+
+            <button type="submit">Concluído</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
